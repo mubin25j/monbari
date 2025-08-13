@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        /* Join Us Section Styling */
+        .joinus-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f9f9f9;
+        }
+
+        .joinus-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .joinus-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Different Brand Colors */
+        .facebook { background: #0e5cc2; }
+        .twitter { background: #1da1f2; }
+        .instagram { background: #E1306C; }
+        .linkedin { background: #0077b5; }
+        .youtube { background: #e00f0f; }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <button id="mobileMenuBtn" class="mobile-btn">☰</button>
+      <ul id="mobileMenu" class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" class="btn">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section class="joinus-section">
+        <h2>Join Us</h2>
+        <p>Stay connected with us on our social platforms</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/monbarihealth" class="facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="https://youtube.com/@monbaripcrc?si=GTdtgVshXpz1vaLS" class="youtube"><i class='bx bxl-youtube'></i></a>
+            <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+            
+        </div>
+    </section>
+   <!-- Contact Info Section -->
+<section class="contact-prefooter">
+  <div class="container">
+    <div class="contact-items">
+      <div class="contact-box">
+        <h3>Address</h3>
+        <p>দুলাল হাজির মোড়, সবুজবাগ, খলিফাপাড়া, রংপুর</p>
+      </div>
+      <div class="contact-box">
+        <h3>Phone</h3>
+        <p>📞 <a href="contact.html">+880 1717-828787</a></p>
+      </div>
+      <div class="contact-box">
+        <h3>Email</h3>
+        <p>✉️ <a href="mailto:info@mindcaremedical.com">monbaripcrc@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.contact-prefooter {
+  background-color: #f9fbfc;
+  padding: 0px 20px 20px;
+  text-align: center;
+}
+
+.contact-prefooter .contact-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.contact-prefooter .contact-box h3 {
+  font-size: 1.1rem;
+  color: #0a9396;
+  margin-bottom: 5px;
+}
+
+.contact-prefooter .contact-box p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+.contact-prefooter .contact-box a {
+  color: #0a9396;
+  text-decoration: none;
+}
+
+.contact-prefooter .contact-box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-prefooter .contact-items {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+</style>
+
+    <footer>
+        <p>&copy; 2025 Serenity Mind & Research Center. All Rights Reserved.</p>
+      </footer>
+    
+      <script src="main.js"></script>
+    
+    </body>
+</html>

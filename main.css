@@ -1,0 +1,562 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Navigation */
+.header {
+  background-color: #2a3f54;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px; 
+  width: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.mobile-btn {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.mobile-menu li a:hover,
+.mobile-menu li a.active {
+  color: #ff6b6b;
+}
+
+.mobile-menu li a.btn {
+  background-color: #ff6b6b;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.mobile-menu li a.btn:hover {
+  background-color: #e04e4e;
+}
+
+/* About Section Headers */
+.page-header {
+  margin-bottom: 3rem;
+}
+.page-header h2 {
+  text-align: center;
+  margin: 4rem 1rem 0rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2a3f54;
+}
+.page-header h5 {
+  text-align: center;
+  margin: 0rem 1rem 2rem;
+  font-weight: 550;
+  font-size: 1rem;
+  color: #2a3f54;
+}
+.page-content h2 {
+  font-size: medium;
+  margin: 0rem 0rem 2rem;
+}
+.about-stats {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  color: rgb(23, 125, 52);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-align: left;
+  flex: 1;
+  max-width: 200px;
+}
+
+.stat-item i {
+  font-size: 3rem;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.stat-item p {
+  margin-top: 0px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .about-stats {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .stat-item {
+    max-width: 100%;
+  }
+}
+
+/* Container flex for desktop */
+.about-container {
+  display: flex;
+  max-width: 100%;
+  gap: 5rem;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left content styles */
+.about-content {
+  justify-content: left;
+  flex: 1 1 500px;
+  color: #2a3f54;
+}
+
+.logo-main img {
+  max-width: 150px;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Right image styles */
+.about-image {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .logo-main img {
+    max-width: 120px;
+  }
+}
+
+/* Services Section */
+#services,
+.services-list {
+  text-align: center;
+  padding: 0 1rem 3rem;
+}
+
+.service-card {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  font-weight: 600;
+  color: #2a3f54;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+.testimonials blockquote {
+  background: #e3f2fd;
+  border-left: 6px solid #4a90e2;
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  max-width: 600px;
+  font-style: italic;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact & Appointment Forms */
+.contact-section,
+.appointment-section {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  color: #333;
+}
+.logo-main1 img {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  max-width: 120px;
+}
+
+.contact-form,
+.appointment-form {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-form textarea,
+.appointment-form textarea {
+  min-height: 100px;
+}
+
+.appointment-form select,
+.appointment-form input[type="date"],
+.contact-form input[type="tel"] {
+  cursor: pointer;
+}
+
+.contact-form button,
+.appointment-form button {
+  background-color: #4ac154;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: .75rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover,
+.appointment-form button:hover {
+  background-color: #6ad975;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  background-color: #f0f4f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 1.5;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.map-container {
+  flex: 1 1 400px;
+  max-width:100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #2a3f54;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .mobile-btn {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #2a3f54;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  .mobile-menu.active {
+    display: flex;
+  }
+  .mobile-menu li a {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  .contact-section,
+  .appointment-section {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
+/*news section
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header 
+.header {
+  background-color: #2a3f54;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.mobile-btn {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.mobile-menu li a:hover,
+.mobile-menu li a.active {
+  color: #ff6b6b;
+}
+
+.mobile-menu li a.btn {
+  background-color: #ff6b6b;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.mobile-menu li a.btn:hover {
+  background-color: #e04e4e;
+}
+
+/* News Page Container */
+.news-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Notice Box */
+.notice-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;             /* space between notices */
+  max-width: 1200px;     /* limit total width */
+  margin: 0 auto;        /* center the notice box */
+  padding: 0;            /* remove extra padding */
+  justify-content: center; /* center notices */
+}
+
+/* Notice Images */
+.notice-box .notice-image {
+  flex: 1 1 calc(50% - 0.5rem); /* two notices side by side */
+  max-width: calc(50% - 0.5rem); /* ensures correct width */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Mobile: stack notices */
+/* Mobile: stack notices properly */
+@media (max-width: 768px) {
+  .notice-box {
+    flex-direction: column;   /* stack vertically */
+    gap: 1rem;                /* space between notices */
+    width: 100%;              /* take full width */
+    padding: 0 1rem;          /* small side padding */
+    box-sizing: border-box;
+  }
+
+  .notice-box .notice-image {
+    flex: 1 1 100%;           /* full width */
+    max-width: 100%;          /* remove desktop max-width */
+    height: auto;             /* maintain aspect ratio */
+  }
+}
+
+
+/* News / Video Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual News Item */
+.news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f9fbfc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Videos */
+.news-item video {
+  width: 100%;
+  max-height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* News Title and Date */
+.news-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2a3f54;
+  text-align: center;
+}
+
+.news-item .news-date {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  .notice-box .notice-image {
+    max-height: 250px;
+  }
+  .news-item video {
+    max-height: 250px;
+  }
+}
+

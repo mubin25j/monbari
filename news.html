@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Serenity Mind & Research Center</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    /* Header with Logo + Welcome Message */
+    .header-home {
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: #ffffff;
+      gap: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-main-home img {
+      height: 120px;
+      width: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .welcome-message {
+      flex: 1; /* take remaining space */
+    }
+
+    .welcome-message h1 {
+      font-size: 1.8rem;
+      color: #0a9396;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .welcome-message h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2a3f54; /* dark text for readability */
+      text-align: center;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      display: inline-block;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtle shadow */
+      background-color: rgba(255,255,255,0.8); /* soft background for readability */
+    }
+
+
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+      .header-home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .welcome-message {
+        max-width: 100%;
+      }
+    }
+  </style>
+<body>
+    <style>
+        /* Full page background */
+body {
+  background: url('web.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Optional overlay to make content readable */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* adjust opacity */
+  z-index: -1; /* behind all content */
+}
+
+    </style>
+    
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <button id="mobileMenuBtn" class="mobile-btn">☰</button>
+      <ul id="mobileMenu" class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" class="btn">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+<main class="news-page">
+
+    <header class="header-home">
+  <div class="logo-main-home">
+    <img src="logo-main.png" alt="Monbari Logo">
+  </div>
+  <div class="welcome-message">
+    <h1>মনবাড়ি সাইকিয়াট্রিক কেয়ার এন্ড রিসার্চ সেন্টার</h1>
+    <h2>NOTICE-BOX</h2>
+  </div>
+</header>
+
+  <!-- Notice Section -->
+  <div class="notice-box">
+    <img src="ok.png" alt="Notice 1" class="notice-image">
+    <img src="ok1.png" alt="Notice 2" class="notice-image">
+  </div>
+
+  <!-- News / Videos -->
+  <section class="news-grid">
+    <div class="news-item">
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <h3>শিরোনাম ১</h3>
+      <span class="news-date">১৩ আগস্ট, ২০২৫</span>
+    </div>
+
+    <div class="news-item">
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+      <h3>শিরোনাম ২</h3>
+      <span class="news-date">১৩ আগস্ট, ২০২৫</span>
+    </div>
+
+    <div class="news-item">
+      <video controls>
+        <source src="video3.mp4" type="video/mp4">
+      </video>
+      <h3>শিরোনাম ৩</h3>
+      <span class="news-date">১৩ আগস্ট, ২০২৫</span>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // Hide missing notices
+  document.querySelectorAll('.notice-image').forEach(img => {
+    img.onerror = () => img.style.display = 'none';
+  });
+
+  // Hide missing videos
+  document.querySelectorAll('.news-item video').forEach(video => {
+    const source = video.querySelector('source');
+    fetch(source.src, { method: 'HEAD' })
+      .then(res => {
+        if (!res.ok) video.parentElement.style.display = 'none';
+      })
+      .catch(() => video.parentElement.style.display = 'none');
+  });
+</script>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; ২০২৫ Serenity Mind & Research Center. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

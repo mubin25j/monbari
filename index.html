@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <title>Home | Monbari Psychiatric & Research Center</title>
+  <style>
+    /* Header with Logo + Welcome Message */
+    .header-home {
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: #ffffff;
+      gap: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-main-home img {
+      height: 120px;
+      width: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .welcome-message {
+      flex: 1; /* take remaining space */
+    }
+
+    .welcome-message h1 {
+      font-size: 1.8rem;
+      color: #0a9396;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .welcome-message p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+      .header-home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .welcome-message {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <button id="mobileMenuBtn" class="mobile-btn">☰</button>
+      <ul id="mobileMenu" class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" class="btn">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<header class="header-home">
+  <div class="logo-main-home">
+    <img src="logo-main.png" alt="Monbari Logo">
+  </div>
+  <div class="welcome-message">
+    <h1>মনবাড়ি সাইকিয়াট্রিক কেয়ার এন্ড রিসার্চ সেন্টার</h1>
+    <p>আমরা পেশাদার মানসিক স্বাস্থ্য সেবা, আসক্তি নিরাময়, এবং গবেষণাভিত্তিক সমাধান প্রদান করি। আমাদের লক্ষ্য হলো সুস্থতা এবং ব্যক্তিগত উন্নতির জন্য সহানুভূতিশীল ও নিরাপদ পরিবেশ সৃষ্টি করা।</p>
+  </div>
+</header>
+  <!-- About Content -->
+  <main>
+
+
+  <div class="about-container">
+    <div class="about-content">
+      <section class="page-content">
+        <h1>মনবাড়ি সাইকিয়াট্রিক কেয়ার এন্ড রিসার্চ সেন্টার</h1>
+        <h2>সুস্থ মন, সুস্থ জীবন</h2>
+        <p>শরীরে অসুখ বাঁধলে যত সহজে উপসর্গ ধরা পড়ে, মনের অসুখ ততটাই আড়ালে থেকে যায়। মানসিক স্বাস্থ্যের সুস্থতা জীবন ও জীবিকার জন্য গুরুত্বপূর্ণ। একটি চাপহীন ও রোগহীন সুখী জীবনের জন্য মানসিক স্বাস্থ্য ভালো রাখার বিকল্প নেই</p>
+      </section>
+      
+      <!-- Stats -->
+      <div class="about-stats">
+  <div class="stat-item">
+    <i class="fa-solid fa-briefcase"></i>
+    <div class="stat-text">
+      <h3>400+</h3>
+      <p>Complete Cases</p>
+    </div>
+  </div>
+  <div class="stat-item">
+    <i class="fa-solid fa-user-tie"></i>
+    <div class="stat-text">
+      <h3>20+</h3>
+      <p>Professional Staffs</p>
+    </div>
+  </div>
+  
+  </div>
+    </div>
+
+    <div class="about-image">
+      <img src="fornt.jpg" alt="Front view of Research Center">
+    </div>
+  </div>
+  <!-- Mental Health Services -->
+<section class="service-section">
+  <div class="service-container">
+    <div class="service-box">
+      <h2>মানসিক স্বাস্থ্য সেবা</h2>
+      <ul>
+        <li>সকল প্রকার মানসিক রোগীদের চিকিৎসা প্রদান</li>
+        <li>মানসিক রোগীদের সাইকোথেরাপি প্রদান</li>
+        <li>রোগী ও রোগী কাঊন্সিলিং প্রদান</li>
+        <li>শিশুদের মানসিক রোগের চিকিৎসা</li>
+        <li>অভিভাবক দের কাউন্সেলিং</li>
+        <li>কর্মজীবিদের মানসিক স্বাস্থ্য কর্মশালা</li>
+        <li>ষ্ট্রেশ ম্যানেজমেন্ট প্রশিক্ষণ</li>
+      </ul>
+    </div>
+
+    <div class="service-box">
+      <h2>বিশেষ কর্মসূচি</h2>
+      <ul>
+        <li>মানসিক স্বাস্থ্যের সচেতনতা প্রোগ্রাম</li>
+        <li>প্যারেন্টিং সেমিনার</li>
+        <li>কাপল কাউন্সেলিং</li>
+        <li>সাইকো সেক্সুয়াল সমস্যার চিকিৎসা</li>
+        <li>বৃদ্ধদের মানসিক স্বাস্থ্য সেবা</li>
+        <li>নিউরোসাইকিয়াট্রির সমস্যার চিকিৎসা</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Mental Health Services Section */
+.service-section {
+  background-color: #f9fbfc;
+  padding: 40px 20px;
+}
+
+.service-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  flex: 1 1 400px;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.service-box h2 {
+  color: #0a9396;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.service-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.service-box ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+</style>
+<!-- Monbari Expert Team Section -->
+<section class="expert-team">
+  <div class="section-header">
+    <h2>Monbari Expert Team</h2>
+    <p>মন বাড়ির বিশেষজ্ঞ ডাক্তার যারা আপনাদের সেবায় নিয়োজিত</p>
+  </div>
+
+  <div class="doctors-container">
+    <!-- Doctor 1 -->
+    <div class="doctor-card">
+      <img src="doctor1.jpg" alt="Assisstent prof.Dr. Rafiqul Islam">
+      <h3>Assisstent prof.Dr. Rafiqul Islam</h3>
+      <p>সহকারী অধ্যাপক</p>
+      <p>বিভাগীয় প্রধান (অবঃ) মানসিক রোগ বিভাগ, দিনাজপুর মেডিকেল কলেজ</p>
+      <p>বিশেষজ্ঞ চিকিৎসক, মনবাড়ি সাইকিয়াট্রিক কেয়ার এন্ড রিসার্চ সেন্টার, রংপুর</p>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="doctor-card">
+      <img src="doctor2.jpg" alt="Muhammad Abdul Monem">
+      <h3>Muhammad Abdul Monem</h3>
+      <p>অধ্যাপক ও বিভাগীয় প্রধান (অবঃ)</p>
+      <p>MBBS, MPhil</p>
+      <p>রংপুর মেডিকেল কলেজ হাসপাতাল, রংপুর</p>
+      <p>বিশেষজ্ঞ চিকিৎসক, মনবাড়ি সাইকিয়াট্রিক কেয়ার এন্ড রিসার্চ সেন্টার, রংপুর</p>
+    </div>
+
+    <!-- Doctor 3 -->
+    <div class="doctor-card">
+      <img src="doctor3.jpg" alt="Dr. Jotirmoy Roy">
+      <h3>Dr. Jotirmoy Roy</h3>
+      <p>অধ্যাপক ও বিভাগীয় প্রধান (অবঃ)</p>
+      <p>রংপুর মেডিকেল কলেজ হাসপাতাল, রংপুর</p>
+    </div>
+
+    <!-- Doctor 4 -->
+    <div class="doctor-card">
+      <img src="doctor4.jpg" alt="Md. Rahanul Islam">
+      <h3>Md. Rahanul Islam</h3>
+      <p>ইন্টারন্যাশনাল সার্টিফাইড অ্যাডিকশন প্রফেশনাল এন্ড মাস্টার ট্রেইনার</p>
+      <p>MBBS, BCS (স্বাস্থ্য), MD (সাইকিয়াট্রি)</p>
+      <p>কেন্দ্রীয় মাদকাসক্তি কেন্দ্রে আবাসিক মনোরোগ বিশেষজ্ঞ, তেজগাঁও, ঢাকা</p>
+    </div>
+
+    <!-- Doctor 5 -->
+    <div class="doctor-card">
+      <img src="doctor5.jpg" alt="Dr. Abdul Motin">
+      <h3>Dr. Abdul Motin</h3>
+      <p>সহকারী অধ্যাপক ও বিভাগীয় প্রধান, মানসিক রোগ বিভাগ</p>
+      <p>MBBS, MD (Psychiatry), BSMU, ঢাকা</p>
+      <p>ব্রেন, মনোরোগ, শিশুর মানসিক রোগ, মাদকাসক্তি ও সেক্স সমস্যা বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 6 -->
+    <div class="doctor-card">
+      <img src="doctor6.jpg" alt="Ranjan Kumar Sen">
+      <h3>Ranjan Kumar Sen</h3>
+      <p>রংপুর মেডিকেল কলেজ হাসপাতাল</p>
+      <p>MBBS, MCPS</p>
+      <p>মানসিক রোগ, শিশু মনোরোগ, সেক্স সমস্যা, স্নায়ু মনোরোগ ও মাদকাসক্ত বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 7 -->
+    <div class="doctor-card">
+      <img src="doctor7.jpg" alt="Dr. Rafiqul Islam">
+      <h3>Dr. Rafiqul Islam</h3>
+      <p>রংপুর মেডিকেল কলেজ হাসপাতাল, রংপুর</p>
+      <p>MBBS, BCS (স্বাস্থ্য), MD (Psychiatry), BSMU</p>
+      <p>মনোরোগ, মাদকাসক্ত, সেক্সুয়াল মেডিসিন বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 8 -->
+    <div class="doctor-card">
+      <img src="doctor8.jpg" alt="Dr. Krishna Ray">
+      <h3>Dr. Krishna Ray</h3>
+      <p>রংপুর মেডিকেল কলেজ হাসপাতাল, রংপুর</p>
+      <p>MBBS, BCS (স্বাস্থ্য), MD (Psychiatry), BSMU</p>
+      <p>মানসিক, স্নায়ুবিক, মাদকাসক্ত ও সেক্সচুয়াল রোগ বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 9 -->
+    <div class="doctor-card">
+      <img src="doctor9.jpg" alt="Tanvir Shah">
+      <h3>Tanvir Shah</h3>
+      <p>রংপুর মেডিকেল কলেজ ও হাসপাতাল, রংপুর</p>
+      <p>MBBS, BCS (স্বাস্থ্য), MD (Psychiatry)</p>
+      <p>মনোরোগ বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 10 -->
+    <div class="doctor-card">
+      <img src="doctor10.jpg" alt="Dr.-Zikrul-Islam">
+      <h3>Dr.-Zikrul-Islam</h3>
+      <p>BSMMU, ঢাকা</p>
+      <p>MBBS, BCS (স্বাস্থ্য), MD (Psychiatry)</p>
+      <p>মনোরোগ, অনিদ্রা, টেনশন, মাথা ব্যথা, সেক্সচুয়াল মেডিসিন ও মাদকাসক্ত রোগ বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 11 -->
+    <div class="doctor-card">
+      <img src="doctor11.jpg" alt="Dr. Nazmul Hossain">
+      <h3>Dr. Nazmul Hossain</h3>
+      <p>এম আব্দুর রহিম মেডিকেল কলেজ হাসপাতাল, দিনাজপুর</p>
+      <p>MBBS, BCS (স্বাস্থ্য), MD (Psychiatry), BSMU</p>
+      <p>মানসিক, মাদকাসক্ত ও মনোযৌন রোগ বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 12 -->
+    <div class="doctor-card">
+      <img src="/doctor12.jpg" alt="Dr. Nahid Afsana">
+      <h3>Dr. Nahid Afsana</h3>
+      <p>দিনাজপুর মেডিকেল কলেজ ও হাসপাতাল, দিনাজপুর</p>
+      <p>MBBS, BCS (স্বাস্থ্য), MD (Child & Adolescent Psychiatry), BSMU</p>
+      <p>শিশু ও কিশোর মনোরোগ বিশেষজ্ঞ</p>
+    </div>
+
+    <!-- Doctor 13 -->
+    <div class="doctor-card">
+      <img src="doctor13.jpg" alt="Aysha Akther Banu">
+      <h3>Aysha Akther Banu</h3>
+      <p>সাইকোলজি বিভাগ, ঢাকা বিশ্ববিদ্যালয়</p>
+      <p>BSc (Hons), MSc (Psychology)</p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Expert Team Styles */
+.expert-team {
+  padding: 4rem 2rem;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.expert-team .section-header h2 {
+  font-size: 2rem;
+  color: #0a9396;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.expert-team .section-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.doctors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.doctor-card img {
+  width: 100%;
+  height: auto; /* adjust height automatically */
+  max-height: 250px; /* optional max height */
+  object-fit: contain; /* fit entire image */
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+
+}
+
+
+.doctor-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.doctor-card h3 {
+  font-size: 1.2rem;
+  color: #0a9396;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+.doctor-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.2rem 0;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doctor-card img {
+    height: auto;       /* let the image scale naturally */
+    object-fit: contain; /* show the full image without cropping */
+  }
+}
+
+</style>
+  <main>
+    <section class="page-header">
+      <div class="logo-main1">
+        <img src="logo-main.png" alt="Logo">
+      </div>
+      <h2>Contact Us</h2>
+    </section>
+
+    <section class="contact-section">
+      <form action="https://formspree.io/f/xjkojnlo" method="POST" id="contactForm" class="contact-form">
+        <input type="text" name="Name" placeholder="First Name*" required>
+        <input type="email" name="email" placeholder="Email Address*" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <textarea name="message" placeholder="Your Message*" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Address:</strong> দুলাল হাজির মোড়, সবুজবাগ, খলিফাপাড়া, রংপুর</p>
+        <p><strong>Phone:</strong> +880 1717-828787</p>
+        <p><strong>Email:</strong> monbaripcrc@gmail.com</p>
+        <a href="joinus.html">Join Us</a>
+
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.369759953927!2d89.22581249999999!3d25.7583476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e331005f843c93%3A0xa8ed7201581da289!2sMONBARI%20PSYCHIATRIC%20CARE%20%26%20RESEARCH%20CENTRE!5e0!3m2!1sen!2sbd!4v1755032821567!5m2!1sen!2sbd"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+  <style>
+        /* Join Us Section Styling */
+        .joinus-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f9f9f9;
+        }
+
+        .joinus-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .joinus-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Different Brand Colors */
+        .facebook { background: #0e5cc2; }
+        .twitter { background: #1da1f2; }
+        .instagram { background: #E1306C; }
+        .linkedin { background: #0077b5; }
+        .youtube { background: #e00f0f; }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        }
+    </style>
+      <section class="joinus-section">
+        <h2>Join Us</h2>
+        <p>Stay connected with us on our social platforms</p>
+        <div class="social-icons">
+            <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="youtube"><i class='bx bxl-youtube'></i></a>
+            <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+            
+        </div>
+    </section>
+   <!-- Contact Info Section -->
+<section class="contact-prefooter">
+  <div class="container">
+    <div class="contact-items">
+      <div class="contact-box">
+        <h3>Address</h3>
+        <p>দুলাল হাজির মোড়, সবুজবাগ, খলিফাপাড়া, রংপুর</p>
+      </div>
+      <div class="contact-box">
+        <h3>Phone</h3>
+        <p>📞 <a href="contact.html">+880 1717-828787</a></p>
+      </div>
+      <div class="contact-box">
+        <h3>Email</h3>
+        <p>✉️ <a href="mailto:info@mindcaremedical.com">monbaripcrc@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.contact-prefooter {
+  background-color: #f9fbfc;
+  padding: 0px 20px 20px;
+  text-align: center;
+}
+
+.contact-prefooter .contact-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.contact-prefooter .contact-box h3 {
+  font-size: 1.1rem;
+  color: #0a9396;
+  margin-bottom: 5px;
+}
+
+.contact-prefooter .contact-box p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+.contact-prefooter .contact-box a {
+  color: #0a9396;
+  text-decoration: none;
+}
+
+.contact-prefooter .contact-box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-prefooter .contact-items {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+</style>
+</main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Serenity Mind & Research Center. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
